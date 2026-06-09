@@ -6,49 +6,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decort Melamina</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background-color: #ffffff;
+      padding:0;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #fcfcfc;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #000;
-      color: #feb139;
-      padding: 20px;
-      text-align: center;
+      color: #fff;
+      font-size: 1.1rem;
+      margin-top:8px;
     }
     nav {
       text-align: center;
-      background: #333;
+      background: #222;
+      position:sticky;
+      top:0;
+      z-index:1000;
     }
     nav a {
       color: white;
       text-decoration: none;
-      padding: 14px 20px;
+      padding: 15px 20px;
       display: inline-block;
+      font-weight: 600;
+      transition: background-color 0.3s, color 0.3s;
     }
     nav a:hover {
       background-color: #feb139;
       color: #000;
     }
     .section {
-      padding: 40px 20px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
       text-align: center;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 5px,
+    }
+    .section h2::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 3px;
+      background-color: #feb139;
+      left: 25%;
+      bottom: 0;
+      left: 25%;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
     }
     .gallery img {
-      max-width: 300px;
-      margin: 10px;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
       border: 2px solid #000;
+      border-radius: 8px;
+      transition: transform 0.3s;
     }
-    footer {
-      background: #000;
-      color: #feb139;
-      text-align: center;
-      padding: 20px;
+    .gallery img:hover {
+      transform: scale(1.03);
     }
     .contact-info p {
-      margin: 5px;
+      margin-top: 20px;
+    }
+    .btn-contact {
+      display: inline-block;
+      margin:8px;
+      padding: 12px 25px;
+      background-color: #000;
+      color: #feb139;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      border:1px solid #feb139;
+      transition: all 0.3s;
+    }
+    btn-contact:hover {
+      background-color: #feb139;
+      color: #000;
+    }
+    .btn-whatsapp {
+      background-color: #25D366;
+      border: none;
+      color: white;
+    }
+    .btn-whatsapp:hover {
+      background-color: #1DA851;
+      color: white;
+    }
+
+    footer {
+      background: #000;
+      color: #777;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -63,7 +129,7 @@
     <a href="#productos">Productos</a>
     <a href="#contacto">Contacto</a>
   </nav>
-
+<main>
   <section id="sobre" class="section">
     <h2>Sobre Nosotros</h2>
     <p>Muebles de melamina para el hogar, oficinas y negocios: Zapateros, libreros, reposteros, jugueteros y estantes.</p>
@@ -81,18 +147,27 @@
 
   <section id="contacto" class="section">
     <h2>Contacto</h2>
+    <p>Haz clicl en cualquiera de los botones para contactarnos.</p>
     <div class="contact-info">
-      <p>Teléfono: +51 961816213</p>
-      <p>Email: decortmelamine@gmail.com</p>
-      <p>Instagram: @Decort_Melamine</p>
-      <p>Facebook: Decort Melamine</p>
-      <p>TikTok: @decort.melamine</p>
-<p>Catalogo:https://tinyurl.com/Decort-Melamine<p>
+      <a href="https://wa.me/51953207392?text=Hola,%20deseo%20información%20sobre%20los%20muebles%20de%20melamina" target="_blank" class="btn-contact btn-whatsapp">
+      💬 WhatsApp: 953207392
+      </a>
+      <br>
+      <a href="mailto:decortmelamine@gmail.com" class="btn-contact">
+        📧 Email: decortmelamine@gmail.com</a>
+      <a href="https://www.instagram.com/decortmelamine/" target="_blank" class="btn-contact">
+        📸 Instagram: @Decort_Melamine</a>
+      <a href="https://www.facebook.com/profile.php?id=100084182742546" target="_blank" class="btn-contact">
+        👍 Facebook: Decort Melamine</a>
+      <a href="https://tikTok.com/@decort.melamine" target="_blank" class="btn-contact">
+        🎵 TikTok: Decort.melamine</a>
+      <p>Catalogo: <a href="https://tinyurl.com/Decort-Melamine" target="_blank">https://tinyurl.com/Decort-Melamine</a></p>
     </div>
   </section>
+</main>
 
   <footer>
-    <p>&copy; 2025 Decort Melamine. Todos los derechos reservados.</p>
+    <p>&copy; 2026 Decort Melamine. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
