@@ -1,173 +1,346 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="clothesheet" href="clothe.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Decort Melamina</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding:0;
-    }
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #fcfcfc;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      color: #fff;
-      font-size: 1.1rem;
-      margin-top:8px;
-    }
-    nav {
-      text-align: center;
-      background: #222;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 15px 20px;
-      display: inline-block;
-      font-weight: 600;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    nav a:hover {
-      background-color: #feb139;
-      color: #000;
-    }
-    .section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .section h2 {
-      margin-bottom: 20px;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 5px,
-    }
-    .section h2::after {
-      content: '';
-      position: absolute;
-      width: 50%;
-      height: 3px;
-      background-color: #feb139;
-      left: 25%;
-      bottom: 0;
-      left: 25%;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .gallery img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border: 2px solid #000;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-    .contact-info p {
-      margin-top: 20px;
-    }
-    .btn-contact {
-      display: inline-block;
-      margin:8px;
-      padding: 12px 25px;
-      background-color: #000;
-      color: #feb139;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      border:1px solid #feb139;
-      transition: all 0.3s;
-    }
-    btn-contact:hover {
-      background-color: #feb139;
-      color: #000;
-    }
-    .btn-whatsapp {
-      background-color: #25D366;
-      border: none;
-      color: white;
-    }
-    .btn-whatsapp:hover {
-      background-color: #1DA851;
-      color: white;
-    }
+  
+  <!-- ========================================== -->
+  <!-- 1. SEO BÁSICO Y POSICIONAMIENTO EN GOOGLE -->
+  <!-- ========================================== -->
+  <title>Decort Melamine | Muebles de Melamina a Medida en Ate y Lima</title>
+  
+  <meta name="description" content="Decort Melamine: Fabricamos el mueble a medida ideal para tu ambiente en Lima y Ate (reposteros, closets, centros de TV). Punto de atención en Ate y envíos a todo Lima. ¡Cotiza por WhatsApp!">
+  <meta name="keywords" content="muebles de melamina ate, melamina lima, reposteros de cocina ate, closets a medida lima, muebles a medida ate, decort melamine">
+  <meta name="author" content="Decort Melamine">
+  <meta name="robots" content="index, follow">
+  
+  <!-- URL Canónica -->
+  <link rel="canonical" href="https://dm-peru.github.io/decort-melamine/">
 
-    footer {
-      background: #000;
-      color: #777;
-      text-align: center;
-      padding: 25px;
-      font-size: 0.9rem;
-    }
-  </style>
+  <!-- ========================================== -->
+  <!-- 2. OPEN GRAPH & WHATSAPP SOCIAL CARDS -->
+  <!-- ========================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dm-peru.github.io/decort-melamine/">
+  <meta property="og:title" content="Decort Melamine | Tenemos el mueble ideal para tu ambiente">
+  <meta property="og:description" content="Fabricantes de muebles de melamina a medida en Ate y Lima. Reposteros, closets y muebles para sala.">
+  <meta property="og:image" content="https://dm-peru.github.io/decort-melamine/assets/images/og-decort-melamine.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- ========================================== -->
+  <!-- 3. DATOS ESTRUCTURADOS (JSON-LD) -->
+  <!-- ========================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "Decort Melamine",
+    "image": "https://dm-peru.github.io/decort-melamine/assets/images/og-decort-melamine.jpg",
+    "description": "Fabricantes de muebles de melamina a medida para cocinas, dormitorios y salas en Ate y Lima, Perú.",
+    "telephone": "+51953207392",
+    "email": "decortmelamine@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Distrito de Ate",
+      "addressLocality": "Ate",
+      "addressRegion": "Lima",
+      "addressCountry": "PE"
+    },
+    "sameAs": [
+      "https://www.instagram.com/decortmelamine/",
+      "https://www.facebook.com/profile.php?id=100084182742546",
+      "https://tiktok.com/@decort.melamine"
+    ],
+    "areaServed": ["Ate", "Lima Metropolitana", "Perú"]
+  }
+  </script>
+
+  <!-- Hoja de Estilos Marca DM Perú -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Script JS Interactivo (Carga Diferida `defer`) -->
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Decort Melamine</h1>
-    <p>Muebles modernos para hogar, oficinas y negocios</p>
+
+  <!-- ========================================== -->
+  <!-- ENCABEZADO Y NAVEGACIÓN CON MENÚ HAMBURGUESA -->
+  <!-- ========================================== -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo">
+        <a href="#">Decort <span>Melamine</span></a>
+      </h1>
+
+      <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#productos" class="nav-link">Catálogo</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-<!-- Navegación -->
-  <nav>
-    <a href="#sobre">Sobre Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-<main>
-  <section id="sobre" class="section">
-    <h2>Sobre Nosotros</h2>
-    <p>Muebles de melamina para el hogar, oficinas y negocios: Zapateros, libreros, reposteros, jugueteros y estantes.</p>
-    <p>Muebles para la cocina, dormitorios, sala y baño.</p>
-  </section>
 
-  <section id="productos" class="section">
-    <h2>Galería de Productos</h2>
-    <div class="gallery">
-      <img src="C:\Users\USER\Desktop\page\Repostero humo.jpeg" alt="Mueble 1">
-      <img src="C:\Users\USER\Desktop\page\Repostero chick.jpeg" alt="Mueble 2">
-      <img src="C:\Users\USER\Desktop\page\Repostero Niebla.jpeg" alt="Mueble 3">
+  <!-- ========================================== -->
+  <!-- CONTENIDO PRINCIPAL (<main>) -->
+  <!-- ========================================== -->
+  <main>
+    
+    <!-- VISTA PRINCIPAL (ABOVE THE FOLD: FOTOS AL INSTANTE) -->
+    <section id="inicio" class="hero-showcase-section">
+      <div class="container hero-container-grid">
+        
+        <!-- MARCA, SLOGAN Y REGLAS DE NEGOCIO -->
+        <div class="hero-brand-overlay">
+          
+          <div class="location-badge">
+            📍 Punto de Atención en Ate | Envíos a todo Lima
+          </div>
+
+          <h2>Tenemos el mueble ideal <span>para tu ambiente</span></h2>
+          <p class="hero-tagline">Fabricación a medida de muebles de melamina para cocinas, dormitorios y salas.</p>
+          
+          <div class="disclaimer-pill">
+            💡 <strong>Muebles a medida individuales:</strong> <span>No realizamos obras ni remodelaciones integrales.</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#" data-whatsapp-product="Mueble a Medida (Hero)" class="btn btn-whatsapp">
+              💬 Cotizar Mueble por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- GRILLA FOTOGRÁFICA SUPERIOR DESTACADA -->
+        <div class="hero-photo-showcase">
+          
+          <figure class="showcase-item showcase-main">
+            <img 
+              src="assets/images/repostero-cocina.jpg" 
+              alt="Mueble repostero de cocina a medida en melamina fabricado en Ate Lima" 
+              width="800" 
+              height="600"
+              fetchpriority="high"
+              decoding="async">
+            <figcaption class="showcase-caption">
+              <span class="tag">Cocinas</span>
+              <h3>Repostero de Cocina Moderno</h3>
+            </figcaption>
+          </figure>
+          
+          <div class="showcase-secondary-grid">
+            
+            <figure class="showcase-item">
+              <img 
+                src="assets/images/closet-dormitorio.jpg" 
+                alt="Walk-in closet y ropero a medida fabricado en Lima" 
+                width="800" 
+                height="600"
+                loading="lazy"
+                decoding="async">
+              <figcaption class="showcase-caption">
+                <span class="tag">Dormitorios</span>
+                <h3>Walk-in Closet</h3>
+              </figcaption>
+            </figure>
+            
+            <figure class="showcase-item">
+              <img 
+                src="assets/images/centro-tv.jpg" 
+                alt="Centro de entretenimiento y panel de TV flotante fabricado en Ate" 
+                width="800" 
+                height="600"
+                loading="lazy"
+                decoding="async">
+              <figcaption class="showcase-caption">
+                <span class="tag">Salas</span>
+                <h3>Panel de TV</h3>
+              </figcaption>
+            </figure>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+    <section id="nosotros" class="section section-dark">
+      <div class="container">
+        <h2>Sobre <span>Decort Melamine</span></h2>
+        <p class="section-subtitle">Fabricantes de muebles de melamina a medida en Lima</p>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-secondary);">
+          En <strong>Decort Melamine</strong> nos enfocamos en crear la pieza mobiliaria perfecta para tu espacio. Con nuestro punto de atención en el distrito de <strong>Ate</strong> y cobertura a <strong>todo Lima</strong>, diseñamos muebles resistentes, modernos y funcionales utilizando melamina de alta calidad (Pelíkano, Novopan, Vesto).
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="section section-card-bg">
+      <div class="container">
+        <h2>El Mueble Ideal <span>para Cada Espacio</span></h2>
+        <p class="section-subtitle">Selecciona la categoría y diseñamos la pieza a tus medidas exactas</p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Cocinas & Reposteros</h3>
+            <p>Fabricamos el repostero alto o bajo ideal para tu cocina, optimizando cada esquina con sistemas de cierre suave.</p>
+          </article>
+          
+          <article class="service-card">
+            <h3>Dormitorios & Closets</h3>
+            <p>Roperos a medida, walk-in closets, cajoneras organizadoras y zapateros diseñados según el espacio de tu habitación.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Salas & Centros de TV</h3>
+            <p>Paneles flotantes modernos con listonados y consolas suspendidas para transformar la apariencia de tu sala.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Oficinas & Comercios</h3>
+            <p>Escritorios ergonómicos, libreros organizadores y mostradores a medida para tu espacio de trabajo o negocio en Lima.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA DE CATÁLOGO CON FILTROS DE CATEGORÍA Y MODAL -->
+    <section id="productos" class="section section-dark">
+      <div class="container">
+        <h2>Catálogo de <span>Muebles Entregados</span></h2>
+        <p class="section-subtitle">Haz clic en cualquier mueble para ver la foto ampliada o filtrar por categoría</p>
+        
+        <!-- BOTONES DE FILTRO INTERACTIVO DE CATEGORÍA -->
+        <div class="filter-buttons-container">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="cocinas">Cocinas</button>
+          <button class="filter-btn" data-filter="dormitorios">Dormitorios</button>
+          <button class="filter-btn" data-filter="salas">Salas</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-container">
+          
+          <!-- TARJETA 1: COCINA -->
+          <figure class="gallery-card" data-category="cocinas">
+            <div class="gallery-image-wrapper">
+              <img 
+                src="assets/images/repostero-cocina.jpg" 
+                alt="Mueble repostero de cocina a medida fabricado en melamina humo y madera roble en Ate Lima"
+                width="800" 
+                height="600"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <figcaption>
+              <span class="tag">Cocinas</span>
+              <h3>Repostero de Cocina Moderno</h3>
+              <p>Mueble a medida en melamina con iluminación LED integrada para cocina.</p>
+            </figcaption>
+          </figure>
+
+          <!-- TARJETA 2: DORMITORIO -->
+          <figure class="gallery-card" data-category="dormitorios">
+            <div class="gallery-image-wrapper">
+              <img 
+                src="assets/images/closet-dormitorio.jpg" 
+                alt="Closet y ropero a medida de melamina grafito para dormitorio fabricado por Decort Melamine en Ate Lima"
+                width="800" 
+                height="600"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <figcaption>
+              <span class="tag">Dormitorios</span>
+              <h3>Ropero & Walk-in Closet</h3>
+              <p>Mueble a medida para habitación con cajoneras organizadoras y rieles telescópicos.</p>
+            </figcaption>
+          </figure>
+
+          <!-- TARJETA 3: SALA -->
+          <figure class="gallery-card" data-category="salas">
+            <div class="gallery-image-wrapper">
+              <img 
+                src="assets/images/centro-tv.jpg" 
+                alt="Centro de entretenimiento y panel de TV en melamina oscura a medida instalado en Lima"
+                width="800" 
+                height="600"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <figcaption>
+              <span class="tag">Salas</span>
+              <h3>Panel TV Flotante & Consola</h3>
+              <p>Mueble para sala a medida con panel listonado decorativo y consola suspendida.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="section section-card-bg">
+      <div class="container">
+        <h2>Contáctanos y <span>Cotiza Tu Mueble</span></h2>
+        <p class="section-subtitle">Envíanos las fotos o medidas aproximadas de tu espacio por WhatsApp</p>
+        
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Decort Melamine</h3>
+            <p><strong>📍 Punto de Atención:</strong> Distrito de Ate, Lima - Perú</p>
+            <p><strong>🚚 Cobertura de Entrega:</strong> Envíos e instalación en todo Lima Metropolitana</p>
+            <p><strong>💬 WhatsApp Directo:</strong> <a href="#" data-whatsapp-product="Consulta General">+51 953 207 392</a></p>
+            <p><strong>📧 Email:</strong> <a href="mailto:decortmelamine@gmail.com">decortmelamine@gmail.com</a></p>
+            
+            <div class="social-links">
+              <a href="#" data-whatsapp-product="Muebles a Medida">💬 Cotizar por WhatsApp</a>
+              <a href="https://www.instagram.com/decortmelamine/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Decort Melamine">📸 Instagram</a>
+              <a href="https://www.facebook.com/profile.php?id=100084182742546" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Decort Melamine">👍 Facebook</a>
+              <a href="https://tiktok.com/@decort.melamine" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Decort Melamine">🎵 TikTok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL LIGHTBOX DE VISTA PREVIA DE FOTOS -->
+  <div id="image-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Cerrar vista previa">&times;</button>
+      <img id="modal-img" src="" alt="">
+      <div class="modal-info">
+        <span id="modal-tag" class="tag"></span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <a id="modal-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+          💬 Cotizar este Mueble por WhatsApp
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section id="contacto" class="section">
-    <h2>Contacto</h2>
-    <p>Haz clicl en cualquiera de los botones para contactarnos.</p>
-    <div class="contact-info">
-      <a href="https://wa.me/51953207392?text=Hola,%20deseo%20información%20sobre%20los%20muebles%20de%20melamina" target="_blank" class="btn-contact btn-whatsapp">
-      💬 WhatsApp: 953207392
-      </a>
-      <br>
-      <a href="mailto:decortmelamine@gmail.com" class="btn-contact">
-        📧 Email: decortmelamine@gmail.com</a>
-      <a href="https://www.instagram.com/decortmelamine/" target="_blank" class="btn-contact">
-        📸 Instagram: @Decort_Melamine</a>
-      <a href="https://www.facebook.com/profile.php?id=100084182742546" target="_blank" class="btn-contact">
-        👍 Facebook: Decort Melamine</a>
-      <a href="https://tikTok.com/@decort.melamine" target="_blank" class="btn-contact">
-        🎵 TikTok: Decort.melamine</a>
-      <p>Catalogo: <a href="https://tinyurl.com/Decort-Melamine" target="_blank">https://tinyurl.com/Decort-Melamine</a></p>
+  <!-- PIE DE PÁGINA SEMÁNTICO -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 <strong>Decort Melamine</strong>. Todos los derechos reservados. Fabricantes de muebles de melamina a medida en <strong>Ate y Lima, Perú</strong>.</p>
     </div>
-  </section>
-</main>
-
-  <footer>
-    <p>&copy; 2026 Decort Melamine. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
